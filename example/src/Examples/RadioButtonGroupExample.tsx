@@ -6,6 +6,7 @@ import {
   RadioButton,
   Paragraph,
   Theme,
+  List,
 } from 'react-native-paper';
 
 type Props = {
@@ -13,14 +14,16 @@ type Props = {
 };
 
 type State = {
-  value: string;
+  radioValue: string;
+  radioItemValue: string;
 };
 
 class RadioButtonGroupExample extends React.Component<Props, State> {
   static title = 'Radio Button Group';
 
   state = {
-    value: 'first',
+    radioValue: 'first',
+    radioItemValue: 'first',
   };
 
   render() {
@@ -38,19 +41,34 @@ class RadioButtonGroupExample extends React.Component<Props, State> {
           },
         ]}
       >
-        <RadioButton.Group
-          value={this.state.value}
-          onValueChange={(value: string) => this.setState({ value })}
-        >
-          <View style={styles.row}>
-            <Paragraph>First</Paragraph>
-            <RadioButton value="first" />
-          </View>
-          <View style={styles.row}>
-            <Paragraph>Second</Paragraph>
-            <RadioButton value="second" />
-          </View>
-        </RadioButton.Group>
+        <List.Section title="Using RadioButton">
+          <RadioButton.Group
+            value={this.state.radioValue}
+            onValueChange={(value: string) =>
+              this.setState({ radioValue: value })
+            }
+          >
+            <View style={styles.row}>
+              <Paragraph>First</Paragraph>
+              <RadioButton value="first" />
+            </View>
+            <View style={styles.row}>
+              <Paragraph>Second</Paragraph>
+              <RadioButton value="second" />
+            </View>
+          </RadioButton.Group>
+        </List.Section>
+        <List.Section title="Using RadioButton.Item">
+          <RadioButton.Group
+            value={this.state.radioItemValue}
+            onValueChange={(value: string) =>
+              this.setState({ radioItemValue: value })
+            }
+          >
+            <RadioButton.Item label="First item" value="first" />
+            <RadioButton.Item label="Second item" value="second" />
+          </RadioButton.Group>
+        </List.Section>
       </View>
     );
   }
