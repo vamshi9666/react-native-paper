@@ -18,10 +18,9 @@
     "react-native-vector-icons": "^6.6.0"
   },
   "devDependencies": {
-    "@babel/helper-validator-identifier": "^7.9.0",
     "@babel/node": "^7.6.3",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-env": "^7.9.0",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.6.3",
     "@babel/preset-typescript": "^7.6.0",
