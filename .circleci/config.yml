@@ -2,7 +2,7 @@ version: 2
 
 defaults: &defaults
   docker:
-    - image: circleci/node:10
+    - image: circleci/node:12
   working_directory: ~/react-native-paper
 
 jobs:
@@ -126,4 +126,4 @@ workflows:
       - deploy-docs:
           filters:
             branches:
-              only: master
+              only: "@satya164/test"
