@@ -11259,10 +11259,10 @@ release-it@^12.2.1:
     window-size "1.1.1"
     yargs-parser "13.1.1"
 
-release-it@^13.4.0:
-  version "13.4.0"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-13.4.0.tgz#0c3e61e516ae767a2f6e04b94afc023eed1dd1b4"
-  integrity sha512-iOJAUPK96LYalSGwWWBcEykpWhlBFcxR5ZE/jCRWWezYNWn2u+inzi8gZ2UccIjqA2CKNE9punYDyd6VwQBKBQ==
+release-it@^13.5.1:
+  version "13.5.1"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-13.5.1.tgz#459b9e624c4b03391cdaab78e84cd14e373700c8"
+  integrity sha512-20t+aKKZxE2Wwh6Vi9jF3DINNJSHHuDxSkrCYvIsbAbj9Aj2An1lsRKAsCMcOio4go1TxOAWd3+iVt7KC6F+wg==
   dependencies:
     "@iarna/toml" "2.2.3"
     "@octokit/rest" "17.1.4"
