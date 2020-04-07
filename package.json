@@ -50,7 +50,7 @@
     "react-native-safe-area-view": "^0.14.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.4",
+    "@babel/core": "^7.9.0",
     "@babel/runtime": "^7.4.4",
     "@callstack/eslint-config": "^9.0.0",
     "@commitlint/config-conventional": "^8.3.4",
